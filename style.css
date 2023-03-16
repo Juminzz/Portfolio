@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  font-family: "IBM Plex Sans KR", "MalgunGothic", "Dotum", sans-serif;
+  font-family: "Pretendard", "MalgunGothic", sans-serif;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 84px;
+  padding: 20px 100px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 2px #ccc;
+}
+header .logo {
+  position: relative;
+  font-size: 2em;
+  color: black;
+  font-weight: 700;
+}
+header ul {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+header li a {
+  font-size: 1.25em;
+  color: black;
+  font-weight: 500;
+}
+header li.active a,
+header li.hover a {
+  color: black;
+}
+#home {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background: #d2fac7;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home .content {
+  position: relative;
+  max-width: 650px;
+  min-height: 1px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content h2 {
+  font-size: 40px;
+}
+.content-item {
+  text-align: center;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
+  background: #30fe6c;
+  padding: 18px 30px;
+  font-size: 1.25em;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+#home .men {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  width: 540px;
+  max-height: 90vh;
+}
+
+#services {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 100px;
+  background: #34353a;
+}
+#services,
+#portfolio,
+#contact {
+  position: relative;
+  min-height: 200px;
+  background: #fff;
+  padding: 120px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.alist {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .ulist {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    justify-content: space-around;
+    -webkit-box-pack: center;
+    row-gap: 2.5rem;
+    margin-bottom: 100px;
+  }
+}
+.alist > svg {
+  color: #00ff7f;
+  width: 32px;
+  height: 32px;
+  margin-right: 1.5rem;
+}
+.secText {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.secText h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.secText p {
+  font-size: 1.1em;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+}
+#services .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+#services .content .servicesBx {
+  background: #2e2f34;
+  padding: 50px 20px;
+  border: 2px solid #2e2f34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.5s;
+}
+#services .content .servicesBx:hover {
+  border: 2px solid #30fe6c;
+}
+#services .content .servicesBx img {
+  opacity: 0.5;
+  max-width: 100px;
+  filter: invert(1);
+  transition: 0.5s;
+}
+#services .content .servicesBx:hover img {
+  opacity: 1;
+}
+#services .content .servicesBx h3 {
+  color: #30fe6c;
+  font-weight: 500;
+}
+.center {
+  width: 100%;
+  text-align: center;
+}
+.skill-background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 600px;
+  padding: 120px 200px;
+  background: #b6bee4;
+  text-align: center;
+  font-size: 30px;
+}
+#portfolio {
+  background: #fff;
+  text-align: center;
+}
+#portfolio .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px 0;
+}
+#portfolio .content .imgBx {
+  position: relative;
+}
+#portfolio .content .imgBx img {
+  width: 545px;
+  max-width: 100%;
+}
+#contact .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+#contact .content a {
+  height: 120px;
+  background: #2e2f34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: #fff;
+  transition: 0.5s;
+}
+#contact .content a:hover {
+  background: #30fe6c;
+}
+#contact .content a ion-icon {
+  font-size: 1.5em;
+  color: #30fe6c;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+#contact .content a:hover,
+#contact .content a:hover ion-icon {
+  color: #222;
+}
+.copyright {
+  position: relative;
+  font-size: 1.1em;
+  color: #aaa;
+  margin-top: 150px;
+}
+.copyright a {
+  color: #30fe6c;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 20px 50px;
+  }
+  header.active .menuToggle::before {
+    transform: translateY(0) rotate(45deg);
+    box-shadow: 0 0 #fff;
+  }
+  header.active .menuToggle::after {
+    transform: translateY(0) rotate(315deg);
+    box-shadow: 0 0 #fff;
+  }
+  header ul {
+    display: none;
+  }
+  header.active ul {
+    position: fixed;
+    left: 0;
+    top: 84px;
+    width: 100%;
+    height: calc(100vh - 84px);
+    background: rgba(50, 50, 50, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 98;
+  }
+  header.active li a {
+    font-size: 2em;
+  }
+  #home {
+    flex-direction: column;
+    padding: 150px 50px;
+    padding-bottom: 0;
+  }
+  #home .content h2 {
+    font-size: 4em;
+  }
+  .btn {
+    max-width: 160px;
+    padding: 10px 20px;
+  }
+  #home .men {
+    position: absolute;
+    width: auto;
+    height: 50vh;
+    right: 0;
+  }
+  .secText h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  #services,
+  #portfolio,
+  #contact {
+    padding: 50px;
+  }
+  #services .content,
+  #portfolio .content,
+  #contact .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #services {
+    padding-top: 100px;
+  }
+  #portfolio {
+    padding-top: 100px;
+  }
+  #contact {
+    padding-top: 100px;
+  }
+  .menuToggle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menuToggle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    box-shadow: 0 10px #fff;
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+  .menuToggle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 700px) {
+  #home .content h2 {
+    font-size: 3em;
+  }
+  #home::before {
+    width: 80vw;
+    height: 40vw;
+    border-top-right-radius: 80vw;
+    border-top-left-radius: 80vw;
+  }
+  #home .men {
+    height: 40vh;
+  }
+  #services .content,
+  #portfolio .content,
+  #contact .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #contact .content a {
+    height: 80px;
+  }
+  .btn {
+    max-width: 140px;
+    font-size: 1em;
+  }
+}
