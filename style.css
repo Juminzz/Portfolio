@@ -135,6 +135,7 @@ header li.hover a {
   align-items: center;
   flex-direction: column;
 }
+/* 노트북 */
 .secText h2 {
   font-size: 3em;
   color: #fff;
