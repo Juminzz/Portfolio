@@ -5,9 +5,9 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
-  font-family: "IBM Plex Sans KR", "MalgunGothic", "Dotum", sans-serif;
-  font-family: "Pretendard", "MalgunGothic", sans-serif;
+  font-family: "Jua", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Poor Story", cursive;
 }
 header {
   position: fixed;
@@ -44,31 +44,38 @@ header li.hover a {
   color: black;
 }
 #home {
-  position: relative;
+  /* position: relative; */
   width: 100%;
-  min-height: 679px;
-  background: #d2fac7;
-  padding: 100px;
-  display: flex;
+  height: 100%;
+  /* min-height: 1px; */
+  /* padding: 100px; */
+
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
-#home .content {
-  position: relative;
+#home .home {
+  /* position: relative;
   max-width: 650px;
   min-height: 1px;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 10px; */
 }
-.content h2 {
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 40%;
+}
+
+.content2 h2 {
   font-size: 40px;
 }
-.content-item {
+/* .content-item {
   text-align: center;
-}
+} */
 .btn {
   position: relative;
   display: inline-block;
@@ -92,10 +99,8 @@ header li.hover a {
 #services {
   position: relative;
   background: #fff;
-  padding: 80px;
-  margin-bottom: 80px;
+  padding: 80px 0 0 0;
 }
-
 .alist {
   display: flex;
 }
@@ -117,24 +122,13 @@ header li.hover a {
   margin-right: 1.5rem;
 }
 .secText {
-  position: relative;
-  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.secText h2 {
-  font-size: 3em;
-  color: #fff;
-  margin-bottom: 20px;
-}
 .secText p {
-  font-size: 1.1em;
   color: black;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.5em;
+  margin-bottom: 80px;
 }
 #skills {
   padding: 80px;
@@ -172,7 +166,6 @@ header li.hover a {
 .copyright a {
   color: #30fe6c;
 }
-
 @media (max-width: 900px) {
   header {
     padding: 20px 50px;
@@ -282,10 +275,22 @@ header li.hover a {
 }
 #contact {
   position: relative;
-  background: #454545;
+  background: #a79f9f;
   width: 100%;
   padding: 80px;
   margin-bottom: 80px;
   font-size: 30px;
   text-align: center;
+}
+#go-top {
+  display: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 9999;
+  color: #383939; /* 색상변경*/
 }
