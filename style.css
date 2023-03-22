@@ -151,11 +151,27 @@ img {
   height: 400px;
   border-radius: 20px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 .skill-img {
   margin-top: 50px;
   width: 200px;
   height: 200px;
+  /* transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1); */
+  /* transition: all 0.3s ease-in-out; */
+}
+.skill-box:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.3s ease-in-out; /* 부드러운 모션을 위해 추가*/
 }
 .copyright {
   position: relative;
