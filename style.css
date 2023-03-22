@@ -63,7 +63,7 @@ header li.hover a {
   flex-direction: column;
   gap: 10px; */
 }
-img {
+.home-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
