@@ -9,7 +9,7 @@
   font-family: "Noto Sans KR", sans-serif;
   font-family: "Poor Story", cursive;
 }
-header {
+nav {
   position: fixed;
   left: 0;
   top: 0;
@@ -23,45 +23,31 @@ header {
   background-color: #fff;
   box-shadow: 0 2px 2px #ccc;
 }
-header .logo {
+nav .logo {
   position: relative;
   font-size: 2em;
   color: black;
   font-weight: 700;
 }
-header ul {
+nav ul {
   position: relative;
   display: flex;
   gap: 40px;
 }
-header li a {
+nav li a {
   font-size: 1.25em;
   color: black;
   font-weight: 500;
 }
-header li.active a,
-header li.hover a {
+nav li.active a,
+nav li.hover a {
   color: black;
 }
 #home {
-  /* position: relative; */
   width: 100%;
   height: 100%;
-  /* min-height: 1px; */
-  /* padding: 100px; */
-
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
-}
-#home .home {
-  /* position: relative;
-  max-width: 650px;
-  min-height: 1px;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 10px; */
 }
 .home-img {
   width: 100%;
@@ -73,9 +59,6 @@ header li.hover a {
 .content2 h2 {
   font-size: 40px;
 }
-/* .content-item {
-  text-align: center;
-} */
 .btn {
   position: relative;
   display: inline-block;
@@ -177,21 +160,21 @@ header li.hover a {
   color: #30fe6c;
 }
 @media (max-width: 900px) {
-  header {
+  nav {
     padding: 20px 50px;
   }
-  header.active .menuToggle::before {
+  nav.active .menuToggle::before {
     transform: translateY(0) rotate(45deg);
     box-shadow: 0 0 #fff;
   }
-  header.active .menuToggle::after {
+  nav.active .menuToggle::after {
     transform: translateY(0) rotate(315deg);
     box-shadow: 0 0 #fff;
   }
-  header ul {
+  nav ul {
     display: none;
   }
-  header.active ul {
+  nav.active ul {
     position: fixed;
     left: 0;
     top: 84px;
@@ -205,7 +188,7 @@ header li.hover a {
     gap: 20px;
     z-index: 98;
   }
-  header.active li a {
+  nav.active li a {
     font-size: 2em;
   }
   #home {
@@ -271,17 +254,26 @@ header li.hover a {
   }
 }
 #project {
-  position: relative;
+  position: absolute;
   background: #fff;
   width: 100%;
   padding: 80px;
-  margin-bottom: 80px;
   font-size: 30px;
-  text-align: center;
+  text-align: center;  
 }
 .project-background {
   width: 100%;
   height: 500px;
+}
+.project-title{
+  display:flex;
+}
+.project-item{
+  width: 300px;
+  height: 200px;
+  background-color: rgb(195, 138, 138);
+  margin-left: 50px;
+  margin-top: 50px;
 }
 #contact {
   position: relative;
