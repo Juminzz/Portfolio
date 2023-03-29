@@ -23,9 +23,17 @@ nav {
   background-color: #fff;
   box-shadow: 0 2px 2px #ccc;
 }
+.nav-font {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.my-about {
+  font-size: 1.3em;
+  font-weight: 600;
+}
 nav .logo {
   position: relative;
-  font-size: 2em;
+  font-size: 1.8em;
   color: black;
   font-weight: 700;
 }
@@ -395,7 +403,7 @@ a.project-content {
   background-color: #0b2a3e;
 }
 .project-2 {
-  background-color: var(--highlight);
+  background-color: #8f55ec;
 }
 .project-3 {
   background-color: #000;
@@ -408,15 +416,6 @@ a.project-content {
 }
 .project-6 {
   background-color: #1faec8;
-}
-.project-7 {
-  background-color: #ed1a76;
-}
-.project-8 {
-  background-color: #c8af1f;
-}
-.project-9 {
-  background-color: #951fc8;
 }
 @media all and (max-width: 570px) {
   #project {
@@ -441,7 +440,9 @@ a.project-content {
     margin: 0.13em 0;
     text-align: left;
   }
-
+  .text-wrap {
+    margin-bottom: 50px;
+  }
   .project-description {
     text-align: left;
   }
