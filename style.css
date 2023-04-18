@@ -87,7 +87,7 @@ nav li.hover a {
   /* transform: translate(-50%, -50%); */
 }
 .home-typing {
-  width: 1200px;
+  width: 1120px;
   animation: typing 1.5s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
